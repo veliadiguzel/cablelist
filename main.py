@@ -91,7 +91,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-df=pd.read_excel(open('data.xlsx'),
+df=pd.read_excel(open('data.xlsx',encoding='utf-8'),
               sheet_name='Sayfa1')  
 
 st.dataframe(filter_dataframe(df))
