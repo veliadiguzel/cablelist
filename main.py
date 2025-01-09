@@ -54,7 +54,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                 user_cat_input = right.multiselect(
                     f"{column} içindeki değerler",
                     df[column].unique(),
-                    default=list(df[column].unique()),
+                    #default=list(df[column].unique()),
                 )
                 df = df[df[column].isin(user_cat_input)]
             elif is_numeric_dtype(df[column]):
