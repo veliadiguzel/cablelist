@@ -92,7 +92,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
 
 df=pd.read_excel(open('/mount/src/cablelist/data.xlsx','rb'),
-              sheet_name='Sayfa1')  
+              sheet_name='Sayfa')  
 
 st.dataframe(filter_dataframe(df))
 
